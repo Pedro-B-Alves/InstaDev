@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#E5E5E5;
+}
+
+.content_center{
+    width: 610px;
+    margin: auto;
+    margin-top: 24px;
+    /* background-color: lightblue; */
+}
+.feed{
+    display:flex;
+}
+
+.perfil_feed{
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    margin-top: 38px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.itens ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 13px;
+}
+
+.postar{
+    background-color: lightpink;
+    margin-top: 38px;
+
+}
+
+.postagens{
+    background-color: lightyellow;
+    margin-top: 38px;
+
+}
