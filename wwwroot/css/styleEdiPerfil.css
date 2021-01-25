@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.topo{
+    position: absolute;
+    width: 100%;
+    height: 3.2em;
+    left: 0px;
+    top: 0px; 
+    /* background-color: lime; */
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+
+}
+
+.direita{
+    margin-left: 38em;
+}
+
+.container{
+    width: 70em;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 28em;
+    /* background-color: magenta; */
+}
+
+.logo{
+    height: 27px;
+    width: 78px;
+    left: 487px;
+    top: 30em;
+
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* background-color: slateblue; */
+}
+
+.campo{
+    height: 28px;
+    width: 215px;
+    left: 850px;
+    top: 10px;
+    border-radius: 2px;
+
+    left: 44.27%;
+    right: 44.53%;
+    top: 18.87%;
+    bottom: 28.3%;
+
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.icons{
+    width: 19em;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blue; */
+}
+
