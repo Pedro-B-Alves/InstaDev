@@ -8,7 +8,9 @@
 }
 /* ==========HEADER/TOPO========== */
 .topo{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 3.2em;
     left: 0px;
@@ -30,7 +32,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 28em;
+    margin-left: 10em;
     /* background-color: magenta; */
 }
 
@@ -49,7 +51,32 @@
     /* background-color: slateblue; */
 }
 
-.campo{
+input[type=text]{
+    width: 215px;
+    height: 28px;
+    left: 852px;
+    top: 12px;
+    
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    font-family:Segoe UI;
+}
+
+  /* webkit solution */
+::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    text-align:center; 
+}
+  /* mozilla solution */
+    input:-moz-placeholder{ 
+    font-family: FontAwesome;
+    text-align:right; 
+}
+
+/* .campo_header{
     height: 28px;
     width: 215px;
     left: 850px;
@@ -65,7 +92,11 @@
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
     border-radius: 2px;
-}
+
+    font-family: fontawesome, Segoe UI;
+
+    background-color: black;
+} */
 
 .icons{
     width: 19em;
@@ -153,6 +184,15 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+}
+.informacoes h4{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 16px;
+    color: #909090;
 }
 
 .informacoes p{
