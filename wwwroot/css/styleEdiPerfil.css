@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap%27');
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-
+/* ==========HEADER/TOPO========== */
 .topo{
     position: absolute;
     width: 100%;
@@ -71,5 +73,285 @@
     display: flex;
     justify-content: space-around;
     /* background-color: blue; */
+}
+
+/* ==========Fim do HEADER/TOPO========== */
+
+/* ==========Edição de Perfil========== */
+
+.color{
+     background-color:#E5E5E5;
+}
+
+.teste{
+    width: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.conteudo{
+    height: 38.125em;
+    width: 65%;
+    left: 492px;
+    top: 77px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: 1px solid #F1F1F1
+}
+
+.aba{
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid #F1F1F1;;
+    /* background-color: magenta;*/
+    margin-right: 10%;
+
+}
+
+.aba h1{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    border-left: 2px solid #000000;;
+    /* background-color: turquoise; */
+}
+
+
+.informacoes{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    /* background-color: mediumspringgreen; */
+}
+
+.informacoes h2{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.informacoes h3{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.informacoes p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #909090;
+}
+
+.titulo p{
+    font-weight: bold;
+}
+
+.campo{
+    display: flex;
+}
+
+.foto{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blueviolet; */
+    margin-top: 1%;
+}
+
+.foto1{
+    width: 14%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: springgreen; */
+}
+
+.foto2{
+    width: 80%;
+    height: 100%;
+    margin-top: 2.1em;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    /* background-color: salmon; */
+}
+
+.nome{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3%;
+    /* background-color: yellow; */
+}
+
+.nome1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nome2{
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    /* background-color: violet; */
+    margin-left: 18.5%;
+    margin-top: 2%;
+}
+
+.nome h3{
+    margin-left: 6.9%;
+}
+
+.campo1{
+    height: 100%;
+    width: 78%;
+    margin-right: 1.8%;
+    /* background-color: yellowgreen; */
+}
+
+.nome-user{
+    width: 98%;  /*AAAAAAAAAAAAAAAAAA */
+    height: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: tomato; */
+    margin-top: 3.5%;
+}
+
+.nome-user1{
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.nome-user2{
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-left: 21%;
+    margin-top: 2%;
+    /* background-color: orchid; */
+}
+
+.campo2{
+    height: 100%;
+    width: 75%;
+    margin-right: 1.8%;
+    /* background-color: orange; */
+}
+
+.email{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: aqua;  */
+    margin-top: 2%;   
+}
+
+.email1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-left: 18.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.email2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.campo3{
+    height: 100%;
+    width: 85%;
+    margin-right: 1.8%;
+    /* background-color: palegoldenrod; */
+}
+
+.bnts{
+    width: 64%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: teal; */
+    margin-right: 4%;
+    margin-top: 8%;
+}
+
+button{
+    width: 66px;
+    height: 30px;
+    left: 925px;
+    top: 584px;
+    font-family: Segoe UI;
+    color: white;
+    background: #2686CC;
+    border-radius: 2px;
+}
+
+.campo{
+    width: 354px;
+    height: 30px;
+    left: 925px;
+    top: 169px;
+
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+a{
+
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 16px;
+    color: #2686CC;
 }
 
