@@ -76,28 +76,6 @@ input[type=text]{
     text-align:right; 
 }
 
-/* .campo_header{
-    height: 28px;
-    width: 215px;
-    left: 850px;
-    top: 10px;
-    border-radius: 2px;
-
-    left: 44.27%;
-    right: 44.53%;
-    top: 18.87%;
-    bottom: 28.3%;
-
-    background: #FAFAFA;
-    border: 1px solid #DCDCDC;
-    box-sizing: border-box;
-    border-radius: 2px;
-
-    font-family: fontawesome, Segoe UI;
-
-    background-color: black;
-} */
-
 .icons{
     width: 19em;
     height: 100%;
@@ -240,6 +218,11 @@ input[type=text]{
     align-content: center;
     flex-direction: column;
     /* background-color: salmon; */
+}
+
+.foto2 a{
+    width: 23.5%;
+    /* background-color: aqua; */
 }
 
 .nome{
