@@ -39,17 +39,19 @@
                     </div>
                 </section>
                 <section class="postar">
-                    <a href="#"><img src="img/thank-you 3.png" alt="GFHDFGH"></a>
-                    <form>
+                    <div class="perfil_postar">
+                        <a href="#"><img src="img/thank-you 3.png" alt="GFHDFGH"></a>
+                        <b>Postar</b>
+                    </div>
+                    <form class="campo_de_postagem">
                         <div class="campo">            
-                            <label for="descricao">Digite a descrição da imagem...</label>
-                            <input type="text" name="descricao" id="descricao" />
+                            <label for="descricao"></label>
+                            <input type="text" class="text_img" name="descricao" id="descricao" placeholder="         Digite a descrição da imagem..."/>
                         </div>
                         <div class="campo">
-                            <label for="Imagem"></label>
-                            <input type="file" name="Imagem" for="Imagem" />
+                            <input type="file" class="file_img" name="Imagem" for="Imagem" />
                         </div>
-                        <button class="gradient btn" type="submit">Postar</button>
+                        <button class="postar_botao" type="submit">Postar</button>
                     </form>
                 </section>
                 <section class="postagens">
@@ -61,8 +63,8 @@
                     <i class="far fa-comment"></i>
                     <form>
                         <div class="campo">            
-                            <label for="comentar">Comentar...</label>
-                            <input type="text" name="comentar" id="comentar" />
+                            <label for="comentar"></label>
+                            <input type="text" name="comentar" id="comentar" placeholder="Comentar..."/>
                         </div>
                         <button class="gradient btn" type="submit">Postar</button>
                     </form>
