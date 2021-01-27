@@ -10,8 +10,9 @@
 .topo{
     /* position: absolute; */
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1920px;
     height: 3.2em;
     left: 0px;
     top: 0px; 
@@ -61,13 +62,24 @@ input[type=text]{
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
     border-radius: 2px;
+}
 
-    font-family:Segoe UI;
+.camp{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
 }
 
   /* webkit solution */
 ::-webkit-input-placeholder { 
-    font-family: FontAwesome;
+    font-family: FontAwesome, Segoe UI;
+    /* font-family: Segoe UI; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
     text-align:center; 
 }
   /* mozilla solution */
@@ -92,9 +104,9 @@ input[type=text]{
      background-color:#E5E5E5;
 }
 
-.teste{
+.alinhamento{
     width: auto;
-    margin-top: 3%;
+    margin-top: 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -349,7 +361,13 @@ button{
     height: 30px;
     left: 925px;
     top: 584px;
+    
     font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
     color: white;
     background: #2686CC;
     border-radius: 2px;
