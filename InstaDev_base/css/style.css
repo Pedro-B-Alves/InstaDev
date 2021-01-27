@@ -7,15 +7,93 @@
 body {
     background-color:#E5E5E5;
 }
+/*COMEÇO DO TOPO*/
+.topo{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3.2em;
+    left: 0px;
+    top: 0px; 
+    /* background-color: lime; */
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
 
+}
+
+.direita{
+    margin-left: 38em;
+}
+
+.container{
+    width: 70em;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10em;
+    /* background-color: magenta; */
+}
+
+.logo{
+    height: 27px;
+    width: 78px;
+    left: 487px;
+    top: 30em;
+
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* background-color: slateblue; */
+}
+
+.input_topo[type=text]{
+    width: 215px;
+    height: 28px;
+    left: 852px;
+    top: 12px;
+    
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    font-family:Segoe UI;
+}
+
+  /* webkit solution */
+::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    text-align:center; 
+}
+  /* mozilla solution */
+    input:-moz-placeholder{ 
+    font-family: FontAwesome;
+    text-align:right; 
+}
+
+.icons{
+    width: 19em;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blue; */
+}
+
+/* ==========Fim do HEADER/TOPO========== */
 .content_center{
     width: 610px;
     margin: auto;
-    margin-top: 24px;
-    /* background-color: lightblue; */
+    background-color: lightblue; 
 }
 .feed{
     display:flex;
+    background-color: honeydew;
 }
 
 .perfil_feed{
@@ -49,14 +127,28 @@ body {
 }
 
 .perfil_postar{
-    
+    font-size: 18px;
+    font-style: normal;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.perfil_postar a {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.perfil_postar b{
+    margin-left:18px ;
+    margin-top: 10px;
 }
 
 .campo_de_postagem{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 38px;
+    margin-top: 25px;
     height: 100px;
 }
 
@@ -101,7 +193,67 @@ body {
 /*-----------------------------------------------------------------------*/
 
 .postagens{
-    background-color: lightyellow;
+    background-color: white;
     margin-top: 38px;
+    width: 610px;
+    height: 610px;
+}
+.foto_perfil_post{
+    /*background-color: firebrick;*/
+    width: 610px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.foto_perfil_post img{
+    margin-left: 16px;
+}
+.text_perfil_post{
+    /*background-color: coral;*/
+    margin-left: 13px;
+}
+.post_interacao{
+    /*background-color: indianred;*/
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.post_linha{
+    display: flex;
+    flex-direction: column;
+}
+.post_linha p{
+    margin-left: 20px ;
+    margin-top:6px ;
+    font-size: 13px;
+    font-weight: 400;
+}
+.comentar_post{
+    display: flex;
+}
+.comentarios{
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+}
+.comentarios p{
+    margin-left: 7px;
+}
+.postar p{
+    margin-left:20px ;
+    margin-top: 6px;
+}
+.comenta_escrito{
+    width: 215px;
+    height: 28px;
+    left: 852px;
+    top: 12px;
+}
+
+.meu_perfil{
+    display: flex;
+    
 }

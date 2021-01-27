@@ -9,9 +9,26 @@
     <title>InstaDev - Home</title>
 </head>
 <body>
-    <header>
-
-    </header>
+    <header class="topo">
+        <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="/img/Instadev.svg" alt="Logo do InstaDev"></a>
+                 </div> <!--Fim do Logo -->
+                    <div class="pesquisa">                        
+                        <input class="input_topo" type="text" placeholder="&#xF002; Pesquisar" value="" tabindex="1" autocomplete="off">
+                     </div> <!--Fim da Pesquisa -->
+                <nav class="menu"> 
+                    <ul class="icons">
+                        <il><a href="#"><i class="fas fa-home" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="far fa-paper-plane" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="far fa-compass" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="far fa-heart" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="fas fa-user-circle" style="font-size:27px;color:black"></i> </a></il>
+                    </ul>
+                </nav>
+            
+        </div>
+    </header>  
         <div class="feed">
             <div class="content_center">
                 <section class="perfil_feed">
@@ -55,19 +72,27 @@
                     </form>
                 </section>
                 <section class="postagens">
-                    <a href="#"><img src="img/gabigordo 2.png" alt="SFDGDFH"></a>
-                    <b>gabigordo</b>
-                    <p>Flamengo, RJ</p>
-                    <img src="img/post-gabigordo 1.png" alt="SFDGDFH"></a>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-comment"></i>
-                    <form>
-                        <div class="campo">            
-                            <label for="comentar"></label>
-                            <input type="text" name="comentar" id="comentar" placeholder="Comentar..."/>
+                    <div class="foto_perfil_post">
+                        <a href="#"><img src="img/gabigordo 2.png" alt="SFDGDFH"></a>
+                        <div class="text_perfil_post">
+                            <b>gabigordo</b>
+                            <p>Flamengo, RJ</p>
                         </div>
-                        <button class="gradient btn" type="submit">Postar</button>
-                    </form>
+                    </div>
+                    <img src="img/post-gabigordo 1.png" alt="SFDGDFH"></a>
+                    <div class="post_linha">
+                        <div class="post_interacao">
+                            <i class="far fa-heart" style="font-size:23px;color:black"></i>
+                            <i class="far fa-comment" style="font-size:23px;color:black"></i>
+                            <form class="comentar_post">
+                                <div class="campo">            
+                                    <input type="text" class="comenta_escrito" name="comentar" id="comentar" placeholder="Comentar..."/>
+                                </div>
+                            </form>
+                        </div>
+                        <p>2077 curtidas</p>
+                    </div>
+
                     <div class="comentarios">
                         <b>gabigordo</b>
                         <p>#flamengo Amo vocês mil milhões <3 </p>
