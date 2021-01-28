@@ -65,14 +65,13 @@ body {
 
     font-family:Segoe UI;
 }
-
-  /* webkit solution */
+/* webkit solution */
 ::-webkit-input-placeholder { 
     font-family: FontAwesome;
     text-align:center; 
 }
   /* mozilla solution */
-    input:-moz-placeholder{ 
+  input:-moz-placeholder{ 
     font-family: FontAwesome;
     text-align:right; 
 }
@@ -87,13 +86,15 @@ body {
 
 /* ==========Fim do HEADER/TOPO========== */
 .content_center{
-    width: 610px;
+    width: 780px;
     margin: auto;
-    background-color: lightblue; 
+    /*background-color: lightblue;*/
+    font-family:Segoe UI;
+
 }
 .feed{
     display:flex;
-    background-color: honeydew;
+    /*background-color: honeydew;*/
 }
 
 .perfil_feed{
@@ -101,6 +102,7 @@ body {
     border: 1px solid #F1F1F1;
     margin-top: 38px;
     height: 113px;
+    width: 610px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,5 +257,11 @@ body {
 
 .meu_perfil{
     display: flex;
-    
+    /*background-color: yellow;*/
+    height: 60px;
+}
+.teste{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
