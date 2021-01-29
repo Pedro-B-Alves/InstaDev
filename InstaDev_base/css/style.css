@@ -7,12 +7,13 @@
 body {
     background-color:#E5E5E5;
 }
-/*COMEÇO DO TOPO*/
+/* ==========HEADER/TOPO========== */
 .topo{
     /* position: absolute; */
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1920px;
     height: 3.2em;
     left: 0px;
     top: 0px; 
@@ -52,7 +53,7 @@ body {
     /* background-color: slateblue; */
 }
 
-.input_topo[type=text]{
+input[type=text]{
     width: 215px;
     height: 28px;
     left: 852px;
@@ -62,16 +63,28 @@ body {
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
     border-radius: 2px;
-
-    font-family:Segoe UI;
 }
-/* webkit solution */
+
+.camp{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+  /* webkit solution */
 ::-webkit-input-placeholder { 
-    font-family: FontAwesome;
+    font-family: FontAwesome, Segoe UI;
+    /* font-family: Segoe UI; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
     text-align:center; 
 }
   /* mozilla solution */
-  input:-moz-placeholder{ 
+    input:-moz-placeholder{ 
     font-family: FontAwesome;
     text-align:right; 
 }
