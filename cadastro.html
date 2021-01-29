@@ -8,19 +8,21 @@
 </head>
 <body>
     <main>
-        <div class="container_login posicao">
 
-            <div class="login posicao">
-                <div class="titulo_pagina">
-                </div>
+        <div class="container_cadastro posicao">
+
+            <div class="cadastro posicao">
+                
                 <div class="imagem">
                 <img src="img/Instadev.svg" alt="Instadev">
+                </div>
+                
 
+                <div class="texto">
+                    <p>Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
                 </div>
 
-                <br> <!--Não é necessario usar <br> sendo que ele apenas quebra linha, use flex-box-->
-
-                <form action=""> <!--Fazer uma section com os campos ou botar classe no form-->
+                <form action="" class="formulario">
                     <div class="campo"> 
                         <label for="E-mail"></label>
                         <input type="email" name="E-mail" id="E-mail" placeholder="E-mail" required >
@@ -30,6 +32,7 @@
                         <label for="Nome completo"></label>
                         <input type="text" name="Nome completo" id="Nome completo" placeholder="Nome completo" required >
                     </div>
+
                     <div class="campo">
                         <label for="Nome de usuário"></label>
                         <input type="text" name="Nome de usuário" id="ndeusuário" placeholder="Nome de usuário" required >
@@ -38,28 +41,35 @@
                        <div class="campo">
                            <label for="Senha"></label>
                        <input type="password" name="Senha" id="Senha" placeholder="Senha" required>
-                       
-                    </div>
                        </div>
-                    <br>
-                        
-                    <a href="#"><button style="background: #2686CC; border-radius: 2px; 
-                    width: 267px; height:30px; cursor: pointer; color: #FFFFFF; border: none; font-size: 12px;">Cadastrar-se</button></a>
+
+                       
                 </form>
-
-                <br>
-
-                <p> href="#" title="Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.">Ao se cadastrar, você concorda com nossos <br> Termos, Política de Dados e Política de Cookies.</a></p> <!--Isso não é clicavel, é apenas texto, não é necessario usar <a>-->
-            </div>                                                                                                                                      <!--Usar <br> aqui ^-->
-
-            <br>
-
-            <div class=" posicao">
-                <p>Tem uma conta? <a href="#" title="Conecte-se">Conecte-se</a></p>
+                
+                <div class="botao">
+                    <a href="#"><button class="botao">Cadastrar-se</button></a>
+                </div>
+                
+                <div class="termos">
+                    <a href="#"> Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</a>
+                </div>
             </div>
 
-            <br>
             
+            <div class="tem">
+
+                <div class="conecte-se posicao">
+                    <p>Tem uma conta <a href="#" title="Cadastre-se">Conecte-se</a></p>
+                </div>
+              
+            </div>
+            
+            
+            <br>
+
+
+            <br>
+
             <div class="aplicativo posicao">
                 <p>Obtenha o Aplicativo.</p>
 

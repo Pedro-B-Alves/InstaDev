@@ -5,24 +5,14 @@
 
 body{
     background-color: #E5E5E5;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a{
     text-decoration: none;
 }
 
-.container_login{
-    font-family: Billabong;
+.container_cadastro{
     font-size: 12px;
-}
-
-.titulo_pagina h1{
-    font-family: Billabong;
-    font-size: 61px;
-}
-
-.container_login{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -34,14 +24,39 @@ a{
     align-items: center;
     justify-content: center;
 }
-.login{
+
+.formulario{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cadastro{
     width: 342px;
-    height: 461px;
-    left: 789px;
-    top: 149px;
-    border: 1px solid #F1F1F1;
+    height: 550px;
     background-color: #FFFFFF;
     box-sizing:border-box;
+    border: solid 1px #dbdbdb;
+    
+}
+
+.imagem{
+    margin-bottom: 20px;
+}
+
+.texto{
+    
+    width: 270px;
+    margin-bottom: 15px;
+}
+
+.texto p{
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    color: rgba(var(--f52,142,142,142),1) ;
 }
 
 .campo input{
@@ -50,18 +65,50 @@ a{
     font-size: 11px;
     padding: 0 10px;
 }
- 
-  
-.posicionamento{
-    padding-bottom: 10px
-    box-sizing: border-box;
+
+.botao{
+    background: #2686CC;
+    border-radius: 2px;
+    width: 270px;
+    height: 37px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Segoe UI';
+    border: none; font-size: 20px;
+    
+    
+    
 }
 
+.termos{
+    width: 280px;
+    margin-top: 30px;
+    font-family:'Segoe UI';
+    font-size: 13px;
+    text-align:center;
 
-.cadastre-se{
-    width: 267px;
-    height: 30px;
-    border: 1px solid #F1F1F1;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
+
+    
+}
+
+.aplicativo p{
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    text-align: center;
+}
+.conecte-se p{
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    text-align: center;
+}
+.tem{
+    background-color: #ffffff;
+    width: 342px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: solid 1px #dbdbdb;
+
 }
