@@ -1,4 +1,4 @@
-@model Login
+@model Usuario
 @{
     ViewData["Title"] = "InstaDev - Login";
 }
@@ -11,7 +11,7 @@
                     <h1>Instadev</h1>
                 </div>
 
-                <form action="">
+                <form method="POST" action='@Url.Action("Logar")'>
                     <div class="campo posicionamento">
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Email" required >
@@ -38,13 +38,15 @@
 
                 <br>
 
-                <p><a href="#" title="Esqueceu a senha?">Esqueceu a senha?</a></p>
+                <div class="esqueceu">
+                    <p><a href="#" title="Esqueceu a senha?">Esqueceu a senha?</a></p>
+                </div>
             </div>
 
             <br>
 
             <div class="cadastre-se posicao">
-                <p>Não tem uma conta <a href="#" title="Cadastre-se">Cadastre-se</a></p>
+                <p>Não tem uma conta? <a href="#" title="Cadastre-se">Cadastre-se</a></p>
             </div>
 
             <br>
