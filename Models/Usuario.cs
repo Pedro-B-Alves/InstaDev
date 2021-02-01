@@ -1,7 +1,11 @@
 
+using System;
+using System.Collections.Generic;
+using System.IO;
+
 namespace InstaDev.Models
 {
-    public class Usuario
+    public class Usuario : InstagramBase , Interfaces.IUsuario
     {
         //Classes
         public int IdUsuario { get; set; }
@@ -10,7 +14,7 @@ namespace InstaDev.Models
 
         public string Foto { get; set; }
 
-        public Date DataDeNascimento { get; set; }
+        public DateTime DataDeNascimento { get; set; }
         
         public int Seguidos { get; set; }
         
@@ -20,20 +24,86 @@ namespace InstaDev.Models
 
         public string senha { get; set; }
 
-        //Metodos
+        private const string PATH = "Database/Usuario.csv";
+
+        public Usuario(){
+            CreateFolderAndFile(PATH);
+        }
+
+        public string Preparar(Usuario a)
+        {
+            return $"{a.IdUsuario};{a.Nome};{a.Foto};{a.DataDeNascimento};{a.Seguidos};{a.Email};{a.Username};{a.senha}";
+        }
+
+        public void Create(Usuario a)
+        {
+            string [] linhas = { Preparar(a) };
+
+            File.AppendAllLines(PATH, linhas);
+        }
+
+        public void Deletar(int id)
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
+
+            RewriteCSV(PATH, linhas);
+        }
+
+        public List<Usuario> ReadAll()
+        {
+            List<Usuario> usuario = new List<Usuario>();
+
+            string[] linhas = File.ReadAllLines(PATH);
+
+            foreach (string item in linhas)
+            {
+                string[] linha = item.Split(";");
+
+                Usuario novoUsuario = new Usuario();
+
+                novoUsuario.IdUsuario        = int.Parse( linha[0] );
+                novoUsuario.Nome             = linha[1];
+                novoUsuario.Foto             = linha[2];
+                novoUsuario.DataDeNascimento = DateTime.Parse(linha[3] );
+                novoUsuario.Seguidos         = int.Parse(linha[4]);
+                novoUsuario.Email            = linha[5];
+                novoUsuario.Username         = linha[6];
+                novoUsuario.senha            = linha[7];
+
+                usuario.Add(novoUsuario);
+            }
+
+            return usuario;
+        }
+        
+
+        public void Update(Usuario a)
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[0] == a.IdUsuario.ToString());
+
+            linhas.Add( Preparar(a) );
+
+            RewriteCSV(PATH, linhas);
+        }
 
         
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -1,12 +1,14 @@
+using System.Collections.Generic;
+using InstaDev.Models;
+
 namespace InstaDev.Interfaces
 {
-    public class IUsuario
+    public interface IUsuario
     {
         //CRUD
+        void Create(Usuario a);
 
-        void Create(Usiario a);
-
-        List<Usuario> readAll();
+        List<Usuario> ReadAll();
 
         void Update(Usuario a);
 
