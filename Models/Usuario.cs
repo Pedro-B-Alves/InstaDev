@@ -35,6 +35,8 @@ namespace InstaDev.Models
             return $"{a.IdUsuario};{a.Nome};{a.Foto};{a.DataDeNascimento};{a.Seguidos};{a.Email};{a.Username};{a.senha}";
         }
 
+        //CRUD
+
         public void Create(Usuario a)
         {
             string [] linhas = { Preparar(a) };
@@ -89,20 +91,29 @@ namespace InstaDev.Models
 
             RewriteCSV(PATH, linhas);
         }
+        // CRUD fim
 
-        
+        public Usuario Mostrar(int id)
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
 
+            var usuario = linhas.Find(x => x.Split(";")[0] == IdUsuario.ToString());
 
+            string[] mostrarDados = usuario.Split(";");
+            
+            Usuario usuarioDados = new Usuario();
 
+            usuarioDados.IdUsuario        = int.Parse( mostrarDados[0] );
+            usuarioDados.Nome             = mostrarDados[1];
+            usuarioDados.Foto             = mostrarDados[2];
+            usuarioDados.DataDeNascimento = DateTime.Parse(mostrarDados[3] );
+            usuarioDados.Seguidos         = int.Parse(mostrarDados[4]);
+            usuarioDados.Email            = mostrarDados[5];
+            usuarioDados.Username         = mostrarDados[6];
+            usuarioDados.senha            = mostrarDados[7];
 
-
-
-
-
-
-
-
-
+            return usuarioDados;
+        }
 
 
     }
