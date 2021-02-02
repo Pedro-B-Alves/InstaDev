@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\InstaDev\\InstaDev.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
       "projectName": "InstaDev",
-      "projectPath": "D:\\InstaDev\\InstaDev.csproj",
+      "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "D:\\InstaDev\\obj\\",
+      "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
