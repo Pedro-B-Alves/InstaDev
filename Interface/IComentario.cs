@@ -5,9 +5,9 @@ namespace InstaDev.Interface
 {
     public interface IComentario
     {
-        void Create (Comentario e);
-        List<Comentario> ReadAll();
-        void Update (Comentario e);
-        void Delete (int IdComentario);
+        void CriarComentario (Comentario e);
+        List<Comentario> LerComentario();
+        void EditarComentario (Comentario e);
+        void DeletarComentario (int IdComentario);
     }
 }

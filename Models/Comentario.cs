@@ -24,13 +24,13 @@ namespace InstaDev.Models
         }
 
     //CRUD
-        public void Create(Comentario e)
+        public void CriarComentario (Comentario e)
         {
             string [] linhas = {Prepare(e)};
             File.AppendAllLines(PATH, linhas);
         }
 
-        public void Deletar(int id)
+        public void DeletarComentario(int id)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
@@ -39,7 +39,7 @@ namespace InstaDev.Models
             RewriteCSV(PATH, linhas);
         }
 
-        public List<Comentario> ReadAll()
+        public List<Comentario> LerComentario()
         {
             List<Comentario> Comentar = new List<Comentario>();
             string [] linhas = File.ReadAllLines(PATH);
@@ -59,7 +59,7 @@ namespace InstaDev.Models
             return Comentarios;
         }
 
-        public void Update(Comentario e)
+        public void EditarComentario(Comentario e)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
             linhas.RemoveAll(x => x.Split(";")[0] == e.IdComentario.ToString());
