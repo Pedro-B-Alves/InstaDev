@@ -1,10 +1,10 @@
-using InstaDev.Interface;
+using InstaDev.Interfaces;
 using System.Collections.Generic;
 using System.IO;
 
 namespace InstaDev.Models
 {
-    public class Comentario : IComentario 
+    public class Comentario : InstaDevBase , IComentario 
     {
         public int IdComentario { get; set; }
         public string Mensagem { get; set; }
@@ -24,6 +24,7 @@ namespace InstaDev.Models
         }
 
     //CRUD
+
         public void CriarComentario (Comentario e)
         {
             string [] linhas = {Prepare(e)};
@@ -47,16 +48,16 @@ namespace InstaDev.Models
             {
                 string[] linha = item.Split(";");
 
-                Comentar novoComent = new Comentar();
+                Comentario novoComent = new Comentario();
                 novoComent.IdPublicacao = int.Parse(linha[0]);
                 novoComent.IdComentario = int.Parse(linha[1]);
-                novoComent.Usuario = linha [2];
+                novoComent.Usuario = int.Parse(linha [2]);
                 novoComent.Mensagem = linha [3];
 
 
-                Comentarios.Add(novoComent);
+                Comentar.Add(novoComent);
             }
-            return Comentarios;
+            return Comentar;
         }
 
         public void EditarComentario(Comentario e)

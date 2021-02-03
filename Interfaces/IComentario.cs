@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using InstaDev.Models;
 
-namespace InstaDev.Interface
+namespace InstaDev.Interfaces
 {
     public interface IComentario
     {
