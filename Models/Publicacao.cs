@@ -44,6 +44,7 @@ namespace InstaDev.Models
             RewriteCSV(PATH, linhas);
         }
 
+        // Lista todas as publicações
         public List<Publicacao> ListarPublicacao()
         {
             List<Publicacao> publicacoes = new List<Publicacao>();
@@ -68,6 +69,34 @@ namespace InstaDev.Models
             return publicacoes;
         }
 
+        // Lista todas as publicações que tem o id do usuário
+        public List<Publicacao> ListarPublicacao(int id)
+        {
+            List<Publicacao> publicacoes = new List<Publicacao>();
+
+            // Lemos todas as linhas do CSV
+            string[] linhas = File.ReadAllLines(PATH);
+
+            foreach (string item in linhas)
+            {
+                string[] linha = item.Split(";");
+
+                Publicacao novaPublicacao = new Publicacao();
+
+                if ( int.Parse(linha[3]) == id )
+                {
+                    novaPublicacao.IdPublicacao = int.Parse( linha[0] );
+                    novaPublicacao.Imagem = linha[1];
+                    novaPublicacao.Legenda = linha[2];
+                    novaPublicacao.IdUsuario = int.Parse( linha[3] );
+                    novaPublicacao.Likes = int.Parse( linha[4] );
+
+                    publicacoes.Add(novaPublicacao);
+                }
+            }
+            return publicacoes;
+        }
+
         public void EditarPublicacao(Publicacao p)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
@@ -82,6 +111,7 @@ namespace InstaDev.Models
             RewriteCSV(PATH, linhas);
         }
 
+        // Aumenta o número de likes com o id da publicação
         public void Curtir(int id)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);

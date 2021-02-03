@@ -8,6 +8,7 @@ namespace InstaDev.Interfaces
          // Métodos de CRUD - Contrato
         void CriarPublicacao(Publicacao p);
         List<Publicacao> ListarPublicacao();
+        List<Publicacao> ListarPublicacao(int id);
         void EditarPublicacao(Publicacao p);
         void ExcluirPublicacao(int id);
         void Curtir(int id);
