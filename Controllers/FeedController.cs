@@ -8,11 +8,17 @@ namespace InstaDev.Controllers
     public class FeedController : Controller
     {
         Publicacao PublicacaoFeed = new Publicacao();
-
-        public ActionResult Index ()
+        public ActionResult Index()
+        {
+            return View();
+        } 
+        
+        
+        public ActionResult AllPubli ()
         {
             ViewBag.AllPubli = PublicacaoFeed.ListarPublicacao();
             return View();
         }
+
     }
 } 
