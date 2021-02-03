@@ -1,0 +1,66 @@
+@model Usuario
+@{
+    ViewData["Title"] = "InstaDev - Login";
+}
+
+    <main>
+        <div class="container_login posicao">
+
+            <div class="login posicao">
+                <div class="titulo_pagina">
+                    <h1>Instadev</h1>
+                </div>
+
+                <form method="POST" action='@Url.Action("Logar")'>
+                    <div class="campo posicionamento">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email" required >
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" required >
+                    </div>
+
+                    <br>
+                    
+                    <div class="botao">
+                        <a href="#"><button style="background: #2686CC; border-radius: 2px; 
+                        width: 268px; height: 30px; cursor: pointer; color: #FFFFFF; border: none; font-size: 12px;">Entrar</button></a>
+                    </div>
+                </form>
+
+                <br>
+
+                <div class="ou">
+                    <p><img src="Images/Line 1.svg" alt="Linha"> &nbsp; &nbsp; OU &nbsp; &nbsp; <img src="Images/Line 1.svg" alt="Linha"></p>
+                </div>
+
+                <br>
+
+                <div class="esqueceu">
+                    <p><a href="#" title="Esqueceu a senha?">Esqueceu a senha?</a></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="cadastre-se posicao">
+                <p>Não tem uma conta? <a href="~/Cadastro" title="Cadastre-se">Cadastre-se</a></p>
+            </div>
+
+            <br>
+            
+            <div class="aplicativo posicao">
+                <p>Obtenha o aplicativo.</p>
+
+                <br>
+
+                <div class="sites">
+                    <a href="https://www.apple.com/br/app-store/" title="Baixar na App Store"><img src="Images/app_store 1.svg" alt="Baixar na App Store"></a>
+                    <a href="https://play.google.com/store" title="Disponível no Google Play"><img src="Images/google_play 1.svg" alt="Disponível no Google Play"></a>
+                </div>   
+            </div>
+
+        </div>
+    </main>
