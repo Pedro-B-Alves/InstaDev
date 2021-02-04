@@ -8,6 +8,7 @@ namespace InstaDev.Controllers
     public class PerfilController : Controller 
     {
         Usuario usuarioModel = new Usuario();
+        Publicacao publicacaoModel = new Publicacao();
         public IActionResult Perfil()
         {
             //HttpContext.Session.GetString("_IdUsuario");
