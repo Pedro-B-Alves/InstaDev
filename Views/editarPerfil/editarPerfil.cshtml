@@ -5,18 +5,18 @@
 
 <main class="color">
     <section class="alinhamento">
-        <form class="conteudo">
+        <div class="conteudo">
             <div class="aba">
                 <h1>Editar Perfil</h1>
             </div>
-            <div class="informacoes">
+            <form method="POST" action='@Url.Action("Editar")' class="informacoes">
                 <div class="foto">
                      <div class="foto1">
                     <i class="fas fa-user-circle" style="font-size:50px;color:black"></i> 
                 </div>
                 <div class="foto2">
-                    <h2>Default_Name</h2>
-                    <a href="#" class="btn">Alterar foto do perfil</a>
+                    <h2>@ViewBag.User</h2>
+                    <a href="#" type="file" class="btn">Alterar foto do perfil</a>
                 </div>
             </div>
 
@@ -61,9 +61,9 @@
             </div>
             <div class="bnts">
                 <button class="btn" type="submit">Enviar</button>
-                <a href="#" class="desativar">Desativar minha conta definitivamente</a>
+                <a class="desativar" asp-area="" asp-controller="Usuario" asp-action="Excluir" asp-route-id="@usuario.IdUsuario">Desativar minha conta definitivamente</a>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </section>
 </main>
