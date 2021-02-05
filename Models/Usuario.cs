@@ -94,16 +94,16 @@ namespace InstaDev.Models
         }
         // CRUD fim
 
-        public Usuario Mostrar(int id)
+        public Usuario Mostrar(int a)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
-
-            var usuario = linhas.Find(x => x.Split(";")[0] == IdUsuario.ToString());
+            
+            var usuario = linhas.Find(x => x.Split(";")[0] == a.ToString());
 
             string[] mostrarDados = usuario.Split(";");
             
             Usuario usuarioDados = new Usuario();
-
+            
             usuarioDados.IdUsuario        = int.Parse( mostrarDados[0] );
             usuarioDados.Nome             = mostrarDados[1];
             usuarioDados.Foto             = mostrarDados[2];
