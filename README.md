@@ -1,2 +1,0 @@
-# InstaDev
-Projeto SENAI.
