@@ -96,4 +96,12 @@ input[type=search]{
     /* background-color: blue; */
 }
 
+.Image{
+    width: 27px;
+    height: 27px;
+    left: 1395px;
+    top: 10px;
+    border-radius: 50%;
+}
+
 /* ==========Fim do HEADER/TOPO========== */

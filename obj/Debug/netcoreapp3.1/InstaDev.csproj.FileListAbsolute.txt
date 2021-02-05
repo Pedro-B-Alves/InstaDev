@@ -69,3 +69,4 @@ C:\Users\fic\Desktop\manha\juan\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.dll
 C:\Users\fic\Desktop\manha\juan\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.pdb
 C:\Users\fic\Desktop\manha\juan\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.csproj.CopyComplete
 C:\Users\juanv\Desktop\DEV\back-end\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\editarPerfil\editarPerfil.cshtml.g.cs
+C:\Users\fic\Desktop\manha\juan\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\editarPerfil\editarPerfil.cshtml.g.cs

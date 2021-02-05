@@ -9,14 +9,17 @@
             <div class="aba">
                 <h1>Editar Perfil</h1>
             </div>
-            <form method="POST" action='@Url.Action("Editar")' class="informacoes">
+            <form method="POST" action='@Url.Action("Editar")' enctype="multipart/form-data" class="informacoes">
                 <div class="foto">
-                     <div class="foto1">
-                    <i class="fas fa-user-circle" style="font-size:50px;color:black"></i> 
+                    <div class="foto1">
+                    <img src="~/Images/@ViewBag.usuario.foto" alt="Foto de perfil do(a) @ViewBag.usuario.Username" class="Image">
                 </div>
                 <div class="foto2">
-                    <h2>@ViewBag.User</h2>
-                    <a href="#" type="file" class="btn">Alterar foto do perfil</a>
+                    <h2>@ViewBag.usuario.Username</h2>
+                    <div class="file-input">
+                        <input type="file" id="file" class="file">
+                        <label for="file">Alterar foto do perfil</label>
+                    </div>
                 </div>
             </div>
 
@@ -61,7 +64,7 @@
             </div>
             <div class="bnts">
                 <button class="btn" type="submit">Enviar</button>
-                <a class="desativar" asp-area="" asp-controller="Usuario" asp-action="Excluir" asp-route-id="@usuario.IdUsuario">Desativar minha conta definitivamente</a>
+                <a class="desativar" asp-area="" asp-controller="Usuario" asp-action="Excluir" asp-route-id="@ViewBag.usuario.IdUsuario">Desativar minha conta definitivamente</a>
             </div>
         </form>
     </div>
