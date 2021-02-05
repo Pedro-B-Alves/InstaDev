@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDev.Controllers
 {
-
     public class LoginController : Controller
     {
         Usuario usuarioModel = new Usuario();
@@ -28,12 +27,22 @@ namespace InstaDev.Controllers
 
             if(logado != null)
             {
+                // Criamos uma sessão com os dados do usuário
+                HttpContext.Session.SetString("_IdUsuario", logado.Split(";")[0]);
+
                 return LocalRedirect("~/Feed");
             }else
             {
                 return LocalRedirect("~/");
             }
             
+        }
+
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("_IdUsuario");
+            return LocalRedirect("~/");
         }
     }
 }

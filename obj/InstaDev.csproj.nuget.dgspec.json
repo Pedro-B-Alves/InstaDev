@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\fic\\Desktop\\manha\\juan\\InstaDev\\InstaDev.csproj": {}
   },
   "projects": {
@@ -19,29 +20,41 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
 =======
     "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj": {}
+=======
+    "C:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\InstaDev.csproj": {}
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj": {
+    "C:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\InstaDev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
+        "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\InstaDev.csproj",
         "projectName": "InstaDev",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\obj\\",
+        "projectPath": "C:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\InstaDev.csproj",
+        "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> develop
+=======
+          "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
 <<<<<<< HEAD
+<<<<<<< HEAD
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
 =======
 >>>>>>> develop
+=======
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,10 +89,14 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
 >>>>>>> develop
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
         }
       }
     }

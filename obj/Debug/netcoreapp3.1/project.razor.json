@@ -1,9 +1,13 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "FilePath": "c:\\Users\\fic\\Desktop\\manha\\juan\\InstaDev\\InstaDev.csproj",
 =======
   "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
 >>>>>>> develop
+=======
+  "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\InstaDev.csproj",
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,14 +14396,19 @@
       }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "CSharpLanguageVersion": 900
 =======
     "CSharpLanguageVersion": 800
 >>>>>>> develop
+=======
+    "CSharpLanguageVersion": 900
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
   },
   "RootNamespace": "InstaDev",
   "Documents": [
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "FilePath": "c:\\Users\\fic\\Desktop\\manha\\juan\\InstaDev\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
@@ -14436,32 +14445,56 @@
 =======
       "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Login\\Index.cshtml",
       "TargetPath": "Views\\Login\\Index.cshtml",
+=======
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Shared\\Login.cshtml",
+      "TargetPath": "Views\\Shared\\Login.cshtml",
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Perfil\\Perfil.cshtml",
+      "TargetPath": "Views\\Perfil\\Perfil.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Shared\\Login.cshtml",
       "TargetPath": "Views\\Shared\\Login.cshtml",
 >>>>>>> develop
+=======
+      "FilePath": "c:\\Users\\FIC\\Desktop\\Matheus\\InstaDev\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+>>>>>>> fe534cf485139a6f4225e68702d68674b9295068
       "FileKind": "mvc"
     }
   ],

@@ -48,7 +48,16 @@
     @RenderSection("Scripts", required: false)
 =======
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/style.css"/>
+    @switch (@ViewData["Title"])
+    {
+        case "Perfil Page":
+            <link rel="stylesheet" href="~/css/style-Perfil.css">
+            break;
+        default:
+            break;
+    }
+    
 </head>
 <body>
     @RenderBody()
