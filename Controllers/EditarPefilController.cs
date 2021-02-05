@@ -20,20 +20,20 @@ namespace InstaDev.Controllers
             ViewBag.usuario = usuarioModel;
 
             Usuario novoUsuario = MostrarUsuario();
-            novoUsuario.Nome = form["Nome"];
-            novoUsuario.Foto = form["Foto"];
+            novoUsuario.Nome = Form["Nome"];
+            novoUsuario.Foto = Form["Foto"];
             
-            if(form.Files.Count > 0){
+            if(Form.Files.Count > 0){
 
-                var file = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/perfil");
+                var file = Form.Files[0];
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/perfil");
 
                 if(!Directory.Exists(folder))
                 {
                     Directory.CreateDirectory(folder);
                 }
 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/", folder, file.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/", folder, file.FileName);
 
                 using(var stream = new FileStream(path, FileMode.Create))
                 {
@@ -43,9 +43,9 @@ namespace InstaDev.Controllers
                 novoUsuario.Foto = file.FileName;           
             }
 
-            novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
-            novoUsuario.Email = form["Email"];
-            novoUsuario.Username = form["Username"];
+            // novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
+            novoUsuario.Email = Form["Email"];
+            novoUsuario.Username = Form["Username"];
             
             usuarioModel.Update(novoUsuario);
 
