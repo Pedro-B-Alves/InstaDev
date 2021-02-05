@@ -1,3 +1,4 @@
+@model Usuario
 @{
     ViewData["Title"] = "Perfil Page";
 }
@@ -18,7 +19,7 @@
 
                     <div class="usuario">
                         <div class="user">
-                            <h2 class="username">yes_baby</h2>
+                            <h2 class="username">@ViewBag.Mostrar.Username</h2>   
                         </div>
                     </div>
 
