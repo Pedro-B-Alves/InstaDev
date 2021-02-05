@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "kywXcIj7FB7TwbnFjX855cqptlkirOYKJjeiGjQBplvt2pPU+cF/gs3EBBxOoiykkX/7ctFyAA5SplbT1PsfOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\juanv\\Desktop\\DEV\\back-end\\InstaDev\\InstaDev.csproj",
+=======
+  "dgSpecHash": "5hLZabRBIQ+26vkEgIrboi3sOW23B8XyxVkRWcEY5S96JXvGgLwzwIVINkVAiJ3U8tp0u76rvxTKlzqS6PudBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
+>>>>>>> develop
   "expectedPackageFiles": [],
   "logs": []
 }

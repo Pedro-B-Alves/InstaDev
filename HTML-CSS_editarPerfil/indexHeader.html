@@ -1,57 +1,34 @@
-﻿<!DOCTYPE html>
-<<<<<<< HEAD
+<!DOCTYPE html>
 <html lang="br">
-=======
-<html lang="pt-br">
->>>>>>> develop
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - InstaDev</title>
-<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
     <script src="https://kit.fontawesome.com/2faae0d38b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="~/css/styleHeader.css" />
+    <link rel="stylesheet" href="../wwwroot/css/styleEdiPerfil.css">
     <title>InstaDev</title>
 </head>
 <body>
-     <header class="topo">
+    <header class="topo">
         <div class="container">
                 <div class="logo">
-                    <a asp-area = "" asp-controller = "Home" asp-action = "Index"><img src="~/Images/Instadev.svg" alt="Logo do InstaDev"></a>
+                    <a href="#"><img src="../wwwroot/Images/Instadev.svg" alt="Logo do InstaDev"></a>
                  </div> <!--Fim do Logo -->
                     <div class="pesquisa">                        
                         <input class="camp" type="search" placeholder="&#xF002; Pesquisar" value="" tabindex="1" autocomplete="off">
                      </div> <!--Fim da Pesquisa -->
                 <nav class="menu"> 
                     <ul class="icons">
-                        <il><a href="~/Feed" style="font-size:25px;color:black"></i> </a></li>
+                        <il><a href="#"><i class="fas fa-home" style="font-size:25px;color:black"></i> </a></il>
                         <il><a href="#"><i class="far fa-paper-plane" style="font-size:25px;color:black"></i> </a></il>
                         <il><a href="#"><i class="far fa-compass" style="font-size:25px;color:black"></i> </a></il>
                         <il><a href="#"><i class="far fa-heart" style="font-size:25px;color:black"></i> </a></il>
-                        <il><a href="~/Perfil"><img src="~/Images/@ViewBag.foto" alt="Foto do Usuario do(a) @ViewBag.usuario.Username" class="Foto de Perfil do @ViewBag.usuario.Username"></a></il>
+                        <il><a href="#"><i class="fas fa-user-circle" style="font-size:27px;color:black"></i> </a></il>
                     </ul>
                 </nav>    
         </div>
-    </header>    
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
-=======
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/style.css" />
-</head>
-<body>
-    @RenderBody()
->>>>>>> develop
+</header>    
 </body>
 </html>

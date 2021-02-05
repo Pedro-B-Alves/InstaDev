@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\fic\\Desktop\\manha\\juan\\InstaDev\\InstaDev.csproj": {}
   },
   "projects": {
@@ -16,12 +17,31 @@
         "configFilePaths": [
           "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
+        "projectName": "InstaDev",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> develop
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+<<<<<<< HEAD
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+=======
+>>>>>>> develop
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +75,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+>>>>>>> develop
         }
       }
     }
