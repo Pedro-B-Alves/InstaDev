@@ -28,7 +28,7 @@ namespace InstaDev.Controllers
             if(logado != null)
             {
                 // Criamos uma sessão com os dados do usuário
-                HttpContext.Session.SetString("_IdUsuario", logado.Split(";")[3]);
+                HttpContext.Session.SetString("_IdUsuario", logado.Split(";")[0]);
 
                 return LocalRedirect("~/Feed");
             }else
