@@ -13,9 +13,9 @@ namespace InstaDev.Controllers
         public IActionResult Perfil()
         {
             
-            HttpContext.Session.GetString("_IdUsuario");
-
-            ViewBag.Usuario = usuarioModel.Mostrar();
+            var id = int.Parse(HttpContext.Session.GetString("_IdUsuario"));
+            
+            ViewBag.Usuario = usuarioModel.Mostrar(id);
             ViewBag.Publicao = publicacaoModel.ListarPublicacao();
             
             return View();

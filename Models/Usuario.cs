@@ -24,7 +24,7 @@ namespace InstaDev.Models
 
         public string senha { get; set; }
 
-        private const string PATH = "Database/Usuario.csv";
+        public string PATH = "Database/Usuario.csv";
 
         public Usuario(){
             CreateFolderAndFile(PATH);
