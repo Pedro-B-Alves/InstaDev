@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+ul, h1
+{
+    margin: 0;
+}
+
+
 body {
     background-color:#E5E5E5;
 }
@@ -38,12 +44,15 @@ body {
     /* background-color: magenta; */
 }
 
+@font-face {
+    font-family: Billabong;
+    src: url(../Sources/Billabong.ttf);
+}
 .logo{
-    height: 27px;
-    width: 78px;
-    left: 487px;
-    top: 30em;
-
+    font-family: Billabong;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
 }
 
 .pesquisa{
@@ -94,6 +103,7 @@ input[type=search]{
     height: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     /* background-color: blue; */
 }
 
@@ -149,19 +159,10 @@ input[type=search]{
     align-items: center;
 }
 
-.perfil_postar a {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.perfil_postar b{
-    margin-left:18px ;
-    margin-top: 10px;
-}
-
 .campo_de_postagem{
     display: flex;
     justify-content: space-around;
+    background-color: aquamarine;
     align-items: flex-start;
     margin-top: 25px;
     height: 100px;
@@ -172,14 +173,8 @@ input[type=search]{
     height: 28px;
     font-size: 12px;
 }
-.file_img{
-    width: 169.82px;
-}
-.file_img::-webkit-file-upload-button {
-    visibility: hidden;
-}
-.file_img::before {
-    content: 'Escolha a imagem';
+
+.campo2 label {
     color: #7D7D7D;
     display: inline-block;
     background:  #D1D1D1;
@@ -193,12 +188,13 @@ input[type=search]{
     font-weight: 600px;
     
 }
-.file_img:hover::before {
-    border-color: black;
-}
-.file_img:active {
-    outline: 0;
-}
+
+ .file_img {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+} 
 .postar_botao{
     padding: 4.5px 43px;
     background-color: #2686CC;

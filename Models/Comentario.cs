@@ -8,7 +8,7 @@ namespace InstaDev.Models
     {
         public int IdComentario { get; set; }
         public string Mensagem { get; set; }
-        public int Usuario { get; set; }
+        public int IdUsuario { get; set; }
         public int IdPublicacao { get; set; }
         
         private const string PATH = "Database/Comentarios.csv";
@@ -20,7 +20,7 @@ namespace InstaDev.Models
 
         public string Prepare(Comentario e)
         {
-            return $"{e.IdPublicacao};{e.IdComentario};{e.Usuario};{e.Mensagem}";
+            return $"{e.IdPublicacao};{e.IdComentario};{e.IdUsuario};{e.Mensagem}";
         }
 
     //CRUD
@@ -51,7 +51,7 @@ namespace InstaDev.Models
                 Comentario novoComent = new Comentario();
                 novoComent.IdPublicacao = int.Parse(linha[0]);
                 novoComent.IdComentario = int.Parse(linha[1]);
-                novoComent.Usuario = int.Parse(linha [2]);
+                novoComent.IdUsuario = int.Parse(linha [2]);
                 novoComent.Mensagem = linha [3];
 
 
