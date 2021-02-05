@@ -118,6 +118,8 @@ body{
 .imagem-post{
     max-width: 430px;
     max-height: 404px;
+    min-width: 430px;
+    min-width: 404px;
 }
 
 .info-post-dados{

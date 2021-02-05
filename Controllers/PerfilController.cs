@@ -13,12 +13,14 @@ namespace InstaDev.Controllers
         
         public IActionResult Perfil()
         {
-            //HttpContext.Session.GetString("_IdUsuario");
-            ViewBag.Usuario = usuarioModel.Mostrar(2);
+            var id = HttpContext.Session.GetString("_IdUsuario");
+            
+            ViewBag.Usuario = usuarioModel.Mostrar(int.Parse(id));
             ViewBag.Publicao = publicacaoModel.ListarPublicacao();
             
             return View();
         }
+        //public List<Publicacao> exibirPubli();
 
 
 
