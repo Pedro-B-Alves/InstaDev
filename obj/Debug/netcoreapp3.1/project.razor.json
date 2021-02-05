@@ -14392,13 +14392,18 @@
   "RootNamespace": "InstaDev",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\FIC\\Desktop\\pedro\\InstaDev\\Views\\Login\\Index.cshtml",
-      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FilePath": "c:\\Users\\FIC\\Desktop\\pedro\\InstaDev\\Views\\Perfil\\Perfil.cshtml",
+      "TargetPath": "Views\\Perfil\\Perfil.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\FIC\\Desktop\\pedro\\InstaDev\\Views\\Shared\\Login.cshtml",
       "TargetPath": "Views\\Shared\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FIC\\Desktop\\pedro\\InstaDev\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14409,6 +14414,11 @@
     {
       "FilePath": "c:\\Users\\FIC\\Desktop\\pedro\\InstaDev\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FIC\\Desktop\\pedro\\InstaDev\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
