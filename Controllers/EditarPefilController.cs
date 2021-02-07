@@ -20,12 +20,12 @@ namespace InstaDev.Controllers
             ViewBag.usuario = usuarioModel;
 
             Usuario novoUsuario = MostrarUsuario();
-            novoUsuario.Nome = Form["Nome"];
-            novoUsuario.Foto = Form["Foto"];
+            novoUsuario.Nome = form["Nome"];
+            novoUsuario.Foto = form["Foto"];
             
-            if(Form.Files.Count > 0){
+            if(form.Files.Count > 0){
 
-                var file = Form.Files[0];
+                var file = form.Files[0];
                 var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/perfil");
 
                 if(!Directory.Exists(folder))
@@ -43,9 +43,8 @@ namespace InstaDev.Controllers
                 novoUsuario.Foto = file.FileName;           
             }
 
-            // novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
-            novoUsuario.Email = Form["Email"];
-            novoUsuario.Username = Form["Username"];
+            novoUsuario.Email = form["Email"];
+            novoUsuario.Username = form["Username"];
             
             usuarioModel.Update(novoUsuario);
 
@@ -53,9 +52,6 @@ namespace InstaDev.Controllers
 
             return LocalRedirect("~/EditarPerfil");
         }
-
-        //     return LocalRedirect("~/EditarPerfil");
-        // }
 
         [Route("{id}")]
         public IActionResult Excluir(int id){
