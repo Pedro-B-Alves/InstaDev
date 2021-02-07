@@ -88,14 +88,17 @@
             @foreach (Publicacao p in ViewBag.AllPubli)
             {
                 <div id="@p.IdPublicacao" class="postagens">
+                @foreach (Usuario a in ViewBag.AllUser)
+                {
                     <div class="foto_perfil_post">
-                        <a href="#"><img src="Images/gabigordo 2.png" alt="Jogador de Futebol Gabigol encarando a câmera"></a>
+                        <a href="#"><img src= "Images/@a.Foto" alt="" width="42"; height="42";></a>
                         <div class="text_perfil_post">
-                            <b>gabigordo</b>
+                            <b>@a.Username</b>
                             <p>Flamengo, RJ</p>
                         </div>
                     </div>
-                    <img src="img/post-gabigordo 1.png" alt="Dez pessoas com a camiseta do time de futbol flamengo, quatro na frente um pouco abaixados e os outros em pé atráz. Todos sorrindo"/>
+                }
+                    <img src="Imagens/post-gabigordo 1.png" alt=""/>
                     <div class="post_linha">
                         <div class="post_interacao">
                             <i class="far fa-heart" style="font-size:23px;color:black"></i>
@@ -108,23 +111,16 @@
                         </div>
                         <p>@p.Likes curtidas</p>
                     </div>
-                
+                    
+                    <table>
                     @foreach (Comentario e in ViewBag.AllComent)
                     {
                         <tr class="comentarios">
-                            <td>@e.IdUsuario</td>
-                            <td>@e.Mensagem </td>
+                            <th>fghcfghjghj</th>
+                            <td>@e.Mensagem</td>
                         </tr>
-                        <tr class="comentarios">
-                            <td>yes_baby</td>
-                            <td>thank you</td>
-                        </tr>
-                        <tr class="comentarios">
-                            <td>king_pele</td>
-                            <td>Esses são bons de bola, entende?</td>
-                        </tr>
-
                     }
+                    </table>
                 </div>
             }
             </div>    

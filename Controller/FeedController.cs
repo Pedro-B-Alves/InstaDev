@@ -36,18 +36,18 @@ namespace InstaDev.Controllers
             novaPublicao.Legenda = form["Descrição da imagem"];
             novaPublicao.IdPublicacao = PublicacaoFeed.ListarPublicacao().Count +1; 
             novaPublicao.IdUsuario = 1;
-            novaPublicao.Likes = 0;
+            novaPublicao.Likes = 1;
             if(form.Files.Count > 0)
             {
                 var file = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Imagem/ImgPublicacao");
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images");
 
                 if(!Directory.Exists(folder))
                 {
                     Directory.CreateDirectory(folder);
                 }
 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Imagem/", folder, file.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/", folder, file.FileName);
                 using(var stream = new FileStream(path, FileMode.Create))
                 {
                     file.CopyTo(stream);
@@ -73,7 +73,8 @@ namespace InstaDev.Controllers
             novoComentario.Mensagem = form["Mensagem"];
             novoComentario.IdComentario = ComentarioFeed.LerComentario().Count +1;
             novoComentario.IdPublicacao = novaPublicao.IdPublicacao;
-            novoComentario.IdUsuario = int.Parse(HttpContext.Session.GetString("_IdUsuario"));
+            novoComentario.IdUsuario = 1;
+            // novoComentario.IdUsuario = int.Parse(HttpContext.Session.GetString("_IdUsuario"));
 
             ComentarioFeed.CriarComentario(novoComentario);
             ViewBag.AllComent = ComentarioFeed.LerComentario();
