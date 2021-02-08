@@ -189,3 +189,7 @@ C:\Users\FIC\Desktop\Matheus\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.csproj.Co
 C:\Users\FIC\Desktop\Matheus\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\Perfil.cshtml.g.cs
 C:\Users\FIC\Desktop\Matheus\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 >>>>>>> fe534cf485139a6f4225e68702d68674b9295068
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\editarPerfil\editarPerfil.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\Perfil.cshtml.g.cs
