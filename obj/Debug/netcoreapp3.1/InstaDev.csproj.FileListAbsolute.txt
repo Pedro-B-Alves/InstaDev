@@ -233,3 +233,4 @@ C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1
 C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.pdb
 C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.genruntimeconfig.cache
 C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.csproj.CopyComplete
+C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs

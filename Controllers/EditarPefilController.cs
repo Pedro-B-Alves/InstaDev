@@ -13,13 +13,21 @@ namespace InstaDev.Controllers
     {
         Usuario usuarioModel = new Usuario();
 
-        [Route("EditarPerfilUser")]
-        // public IActionResult Update(Usuario a){
-            
-        //     usuarioModel.Update(a);
-        //     ViewBag.usuario = usuarioModel;
+        public IActionResult editarPerfil()
+        {
+            var id = HttpContext.Session.GetString("_IdUsuario");
+            ViewBag.Usuario = usuarioModel.Mostrar(int.Parse(id));
 
-        //     Usuario novoUsuario = MostrarUsuario();
+            return View();
+        }
+
+        // [Route("EditarPerfilUser")]
+        // public IActionResult Update(IFormCollection form){
+            
+        //     //usuarioModel.Update(a);
+        //     //ViewBag.usuario = usuarioModel;
+
+        //     Usuario novoUsuario = new Usuario();
         //     novoUsuario.Nome = form["Nome"];
         //     novoUsuario.Foto = form["Foto"];
             

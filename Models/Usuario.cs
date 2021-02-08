@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using InstaDev.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -115,6 +116,15 @@ namespace InstaDev.Models
             usuarioDados.senha            = mostrarDados[7];
 
             return usuarioDados;
+        }
+
+        public int Id()
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            int id = linhas.Count() + 1;
+
+            return id;
         }
     }
 }

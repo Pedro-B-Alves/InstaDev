@@ -1,0 +1,43 @@
+@model Usuario
+@{ 
+    ViewData["Title"] = "Page Cadastro";
+}
+
+<body class="color">
+    <section class="alinhamento">
+        <section class="conteudo">
+            <div class="logo">
+                <img src="~/Images/Instadev2.svg" alt="Logo do InstaDev">
+            </div>
+            <div class="sub-titulo">
+                <p>Cadastre-se para ver fotos e<br> vídeos dos seus amigos.</p>
+            </div>
+            <form method="POST" action='@Url.Action("CadastroDeUsuario")'>
+            <div class="campos">
+
+                <input type="text" name="Email" class="campo" placeholder="Email">
+                <input type="text" name="Nome" class="campo" placeholder="Nome completo">
+                <input type="text" name="Username" class="campo" placeholder="Nome de usuário">
+                <input type="text" name="Senha" class="campo" placeholder="Senha">
+            </div>
+                <button type="submit">Cadastre-se</button>
+                </form>
+            <div class="txt">
+                <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</p>
+            </div>
+        </section>
+        <section class="conect">
+            <div class="espacamento">
+                <p>Tem uma conta?</p><br>
+                <a asp-area="Fazer login" asp-controller="Logar" asp-action="Index">Conecte-se</a>
+            </div>
+        </section>
+        <div class="obt">
+            <p>Obtenha o aplicativo.</p>
+        </div>    
+        <div class="apps">
+            <a href="#"><img src="~/Images/app_store 1.svg" alt="App Store"></a>
+            <a href="#"><img src="~/Images/google_play 1.svg" alt="Google Play"></a>
+        </div>
+    </section>
+</body>

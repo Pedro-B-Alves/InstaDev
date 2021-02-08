@@ -17,40 +17,46 @@
         case "Perfil Page":
             <link rel="stylesheet" href="~/css/style-Perfil.css">
             break;
+        case "Page Cadastro":
+            <link rel="stylesheet" href="~/css/style-Cadastro.css">
+            break;
         default:
             break;
     }
 </head>
-    
 <body>
-     <header class="topo">
+     @* @if ((ViewData["Title"].ToString() != "Logar") && (ViewData["Title"].ToString() != "Cadastro"))
+    {
+    }  *@
+        <header class="topo">
+            <div class="container">
+                    <div class="logo">
+                        <a asp-area = "" asp-controller = "Home" asp-action = "Index"><img src="~/Images/Instadev.svg" alt="Logo do InstaDev"></a>
+                    </div> <!--Fim do Logo -->
+                        <div class="pesquisa">                        
+                            <input class="camp" type="search" placeholder="&#xF002; Pesquisar" value="" tabindex="1" autocomplete="off">
+                        </div> <!--Fim da Pesquisa -->
+                    <nav class="menu"> 
+                        <ul class="icons">
+                            <il><a href="~/Feed" style="font-size:25px;color:black"></i> </a></li>
+                            <il><a href="#"><i class="far fa-paper-plane" style="font-size:25px;color:black"></i> </a></il>
+                            <il><a href="#"><i class="far fa-compass" style="font-size:25px;color:black"></i> </a></il>
+                            <il><a href="#"><i class="far fa-heart" style="font-size:25px;color:black"></i> </a></il>
+                            @* <il><a href="~/Perfil"><img src="~/Images/@ViewBag.foto" alt="Foto do Usuario do(a) @ViewBag.usuario.Username" class="Foto de Perfil do @ViewBag.usuario.Username"></a></il> *@
+                        </ul>
+                    </nav>    
+            </div>
+        </header>    
         <div class="container">
-                <div class="logo">
-                    <a asp-area = "" asp-controller = "Home" asp-action = "Index"><img src="~/Images/Instadev.svg" alt="Logo do InstaDev"></a>
-                 </div> <!--Fim do Logo -->
-                    <div class="pesquisa">                        
-                        <input class="camp" type="search" placeholder="&#xF002; Pesquisar" value="" tabindex="1" autocomplete="off">
-                     </div> <!--Fim da Pesquisa -->
-                <nav class="menu"> 
-                    <ul class="icons">
-                        <il><a href="~/Feed" style="font-size:25px;color:black"></i> </a></li>
-                        <il><a href="#"><i class="far fa-paper-plane" style="font-size:25px;color:black"></i> </a></il>
-                        <il><a href="#"><i class="far fa-compass" style="font-size:25px;color:black"></i> </a></il>
-                        <il><a href="#"><i class="far fa-heart" style="font-size:25px;color:black"></i> </a></il>
-                        @* <il><a href="~/Perfil"><img src="~/Images/@ViewBag.foto" alt="Foto do Usuario do(a) @ViewBag.usuario.Username" class="Foto de Perfil do @ViewBag.usuario.Username"></a></il> *@
-                    </ul>
-                </nav>    
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
         </div>
-    </header>    
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
 </body>
+        
 </html>

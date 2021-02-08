@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDev.Controllers
-{
+{   
     public class LoginController : Controller
     {
         Usuario usuarioModel = new Usuario();
@@ -30,7 +30,7 @@ namespace InstaDev.Controllers
                 // Criamos uma sessão com os dados do usuário
                 HttpContext.Session.SetString("_IdUsuario", logado.Split(";")[0]);
 
-                return LocalRedirect("~/Feed");
+                return LocalRedirect("~/Perfil");
             }else
             {
                 return LocalRedirect("~/");
