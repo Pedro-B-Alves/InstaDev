@@ -1,0 +1,72 @@
+@model Usuario
+@{
+    ViewData["Title"] = "InstaDev - Editar Perfil";
+}
+
+<main class="color">
+    <section class="alinhamento">
+        <div class="conteudo">
+            <div class="aba">
+                <h1>Editar Perfil</h1>
+            </div>
+            <form method="POST" action='@Url.Action("Editar")' enctype="multipart/form-data" class="informacoes">
+                <div class="foto">
+                    <div class="foto1">
+                    <img src="~/Images/@ViewBag.usuario.foto" alt="Foto de perfil do(a) @ViewBag.usuario.Username" class="Image">
+                </div>
+                <div class="foto2">
+                    <h2>@ViewBag.usuario.Username</h2>
+                    <div class="file-input">
+                        <input type="file" id="file" class="file">
+                        <label for="file">Alterar foto do perfil</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nome">
+                <div class="nome1">
+                    <h3>Nome</h3>
+                        <div class="campo1">
+                            <label for="nome"></label>
+                            <input type="text" name="nome" class="campo">
+                        </div>                      
+                </div>
+                <div class="nome2">                      
+                    <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual<br> você é conhecido: seu nome completo, apelido ou nome comercial.</p>
+                    <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
+                </div>
+            </div>
+
+            <div class="nome-user">
+                <div class="nome-user1">
+                    <h3>Nome de usuário</h3>
+                        <div class="campo2">
+                            <label for="nome-user"></label>
+                            <input type="text" name="nome" class="campo">
+                        </div>
+                </div>
+                <div class="nome-user2">
+                    <p>Na maioria dos casos, você poderá alterar seu nome de usuário<br> novamente para nascimento_tr por mais 14 dias.</p>
+                </div>
+            </div>
+            <div class="email">
+                <div class="email1">
+                    <h4 class="titulo">Informações pessoais</h4>
+                    <p>Forneça suas informações pessoais, mesmo se a conta for usada<br> para uma empresa, um animal de estimação ou outra coisa. Elas<br> não farão parte do seu perfil público.</p>
+                </div>
+                <div class="email2">
+                    <h3>E-mail</h3>
+                        <div class="campo3">
+                            <label for="email"></label>
+                            <input type="email" name="nome" class="campo">
+                        </div>
+                </div>
+            </div>
+            <div class="bnts">
+                <button class="btn" type="submit">Enviar</button>
+                <a class="desativar" asp-area="" asp-controller="Usuario" asp-action="Excluir" asp-route-id="@ViewBag.usuario.IdUsuario">Desativar minha conta definitivamente</a>
+            </div>
+        </form>
+    </div>
+</section>
+</main>
