@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj": {}
+    "C:\\Users\\mateus sa\\Desktop\\InstaDev\\InstaDev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj": {
+    "C:\\Users\\mateus sa\\Desktop\\InstaDev\\InstaDev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
+        "projectUniqueName": "C:\\Users\\mateus sa\\Desktop\\InstaDev\\InstaDev.csproj",
         "projectName": "InstaDev",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\obj\\",
+        "projectPath": "C:\\Users\\mateus sa\\Desktop\\InstaDev\\InstaDev.csproj",
+        "packagesPath": "C:\\Users\\mateus sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mateus sa\\Desktop\\InstaDev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mateus sa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
