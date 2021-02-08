@@ -33,7 +33,6 @@ C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\In
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.pdb
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.genruntimeconfig.cache
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.csproj.CopyComplete
-C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Login.cshtml.g.cs
 E:\InstaDev\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\InstaDev\bin\Debug\netcoreapp3.1\appsettings.json
 E:\InstaDev\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -234,3 +233,6 @@ C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1
 C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.genruntimeconfig.cache
 C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.csproj.CopyComplete
 C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Login.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Cadastro.cshtml.g.cs
