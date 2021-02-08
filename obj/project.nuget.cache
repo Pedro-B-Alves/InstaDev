@@ -1,20 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "kywXcIj7FB7TwbnFjX855cqptlkirOYKJjeiGjQBplvt2pPU+cF/gs3EBBxOoiykkX/7ctFyAA5SplbT1PsfOg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\juanv\\Desktop\\DEV\\back-end\\InstaDev\\InstaDev.csproj",
-=======
   "dgSpecHash": "5hLZabRBIQ+26vkEgIrboi3sOW23B8XyxVkRWcEY5S96JXvGgLwzwIVINkVAiJ3U8tp0u76rvxTKlzqS6PudBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\InstaDev.csproj",
->>>>>>> develop
-=======
-  "dgSpecHash": "BBZIL/i6mQjDQsA2sD7vFlkvZL7ldoScsjoY06AYDPANd+D1+kqowmv4z8r6h4ABC/37156f+igA71glPYULmg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\inta\\InstaDev\\InstaDev.csproj",
->>>>>>> fe534cf485139a6f4225e68702d68674b9295068
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

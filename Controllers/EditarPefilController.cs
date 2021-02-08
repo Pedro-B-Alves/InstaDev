@@ -14,44 +14,44 @@ namespace InstaDev.Controllers
         Usuario usuarioModel = new Usuario();
 
         [Route("EditarPerfilUser")]
-        public IActionResult Update(Usuario a){
+        // public IActionResult Update(Usuario a){
             
-            usuarioModel.Update(a);
-            ViewBag.usuario = usuarioModel;
+        //     usuarioModel.Update(a);
+        //     ViewBag.usuario = usuarioModel;
 
-            Usuario novoUsuario = MostrarUsuario();
-            novoUsuario.Nome = form["Nome"];
-            novoUsuario.Foto = form["Foto"];
+        //     Usuario novoUsuario = MostrarUsuario();
+        //     novoUsuario.Nome = form["Nome"];
+        //     novoUsuario.Foto = form["Foto"];
             
-            if(form.Files.Count > 0){
+        //     if(form.Files.Count > 0){
 
-                var file = form.Files[0];
-                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/perfil");
+        //         var file = form.Files[0];
+        //         var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/perfil");
 
-                if(!Directory.Exists(folder))
-                {
-                    Directory.CreateDirectory(folder);
-                }
+        //         if(!Directory.Exists(folder))
+        //         {
+        //             Directory.CreateDirectory(folder);
+        //         }
 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/", folder, file.FileName);
+        //         var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/", folder, file.FileName);
 
-                using(var stream = new FileStream(path, FileMode.Create))
-                {
-                    file.CopyTo(stream);
-                }
+        //         using(var stream = new FileStream(path, FileMode.Create))
+        //         {
+        //             file.CopyTo(stream);
+        //         }
                 
-                novoUsuario.Foto = file.FileName;           
-            }
+        //         novoUsuario.Foto = file.FileName;           
+        //     }
 
-            novoUsuario.Email = form["Email"];
-            novoUsuario.Username = form["Username"];
+        //     novoUsuario.Email = form["Email"];
+        //     novoUsuario.Username = form["Username"];
             
-            usuarioModel.Update(novoUsuario);
+        //     usuarioModel.Update(novoUsuario);
 
-            ViewBag.UsuarioAtualizado = novoUsuario;
+        //     ViewBag.UsuarioAtualizado = novoUsuario;
 
-            return LocalRedirect("~/EditarPerfil");
-        }
+        //     return LocalRedirect("~/EditarPerfil");
+        // }
 
         [Route("{id}")]
         public IActionResult Excluir(int id){
