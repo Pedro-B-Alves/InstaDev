@@ -6,7 +6,7 @@
 <body>
     <main>
 
-        <div class="container">
+        <div class="container-perfil">
 
             <!--Perfil header-->
             <section class="info">
@@ -44,7 +44,8 @@
                         </div>
 
                         <div class="exit">
-                            <a asp-area="Sair da conta" asp-controller="" asp-action="">Sair</a>
+                            <a asp-area="Editar Perfil" asp-controller="EditarPerfilUser" asp-action="editarPerfil">Editar Perfil</a>
+                            <a asp-area="Sair da conta" asp-controller="Logout" asp-action="Index">Sair</a>
                         </div>
                     </div>  
 
@@ -67,7 +68,6 @@
 
             <!--Posts-->
             <section id="posts">
-               
                 
                     
                 <div id="post">
@@ -143,6 +143,7 @@
 
                 </div>
                 
+            }    
 
                 <div id="post">
                     <div class="foto">

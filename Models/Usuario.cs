@@ -99,7 +99,7 @@ namespace InstaDev.Models
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            var usuario = linhas.Find(x => x.Split(";")[0] == IdUsuario.ToString());
+            var usuario = linhas.Find(x => x.Split(";")[0] == id.ToString());
 
             string[] mostrarDados = usuario.Split(";");
             

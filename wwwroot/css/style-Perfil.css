@@ -11,7 +11,7 @@ body{
     padding: 0;
 }
 
-.container{
+.container-perfil{
     width: 934px;
     margin: 0 auto;
 
@@ -45,6 +45,11 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-size: 16px;
+}
+.exit{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .exit a{
