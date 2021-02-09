@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Shared\\_Cadastro.cshtml",
       "TargetPath": "Views\\Shared\\_Cadastro.cshtml",
       "FileKind": "mvc"
@@ -14439,6 +14444,11 @@
     {
       "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pedro\\OneDrive\\Área de Trabalho\\C#\\InstaDev\\Views\\Shared\\_Feed.cshtml",
+      "TargetPath": "Views\\Shared\\_Feed.cshtml",
       "FileKind": "mvc"
     },
     {

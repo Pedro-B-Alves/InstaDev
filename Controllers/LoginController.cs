@@ -30,7 +30,7 @@ namespace InstaDev.Controllers
                 // Criamos uma sessão com os dados do usuário
                 HttpContext.Session.SetString("_IdUsuario", logado.Split(";")[0]);
 
-                return LocalRedirect("~/Perfil");
+                return LocalRedirect("~/feed");
             }else
             {
                 return LocalRedirect("~/");

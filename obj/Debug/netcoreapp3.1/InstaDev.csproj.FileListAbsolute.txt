@@ -19,7 +19,11 @@ C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\In
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.TagHelpers.input.cache
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.TagHelpers.output.cache
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\InstaDev.RazorCoreGenerate.cache
+<<<<<<< HEAD
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+=======
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Feed\Index.cshtml.g.cs
+>>>>>>> page/feed
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -236,3 +240,4 @@ C:\Users\mathe\OneDrive\Área de Trabalho\reste\InstaDev\obj\Debug\netcoreapp3.1
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Index.cshtml.g.cs
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Login.cshtml.g.cs
 C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Cadastro.cshtml.g.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\C#\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Feed.cshtml.g.cs

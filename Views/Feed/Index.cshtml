@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/feed.css">
+    <link rel="stylesheet" href="~/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
+    <script src="https://kit.fontawesome.com/2faae0d38b.js" crossorigin="anonymous"></script>
+    <title>InstaDev - Home</title>
+</head>
+@model Usuario
+@{ 
+    ViewData["Title"] = "Page Feed";
+}
+@{
+   Layout = "~/Views/Shared/_Feed.cshtml";
+}
+<body>
+    <header class="topo">
+        <div class="container">
+            <div class="logo">
+                <h1>InstaDev</h1>
+            </div> <!--Fim do Logo -->
+            <div class="pesquisa">                        
+                <input class="camp" type="search" placeholder="&#xF002; Pesquisar" value="" tabindex="1" autocomplete="off">
+            </div> <!--Fim da Pesquisa -->
+                <nav class="menu"> 
+                    <ul class="icons">
+                        <il><a href="#"><i class="fas fa-home" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="far fa-paper-plane" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="far fa-compass" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="far fa-heart" style="font-size:25px;color:black"></i> </a></il>
+                        <il><a href="#"><i class="fas fa-user-circle" style="font-size:27px;color:black"></i> </a></il>
+                    </ul>
+                </nav>
+        </div>
+    </header>    
+        <div class="feed">
+            <div class="content_center">
+                <section class="teste">
+                    <section class="perfil_feed">
+                        <div class="itens">
+                            <ul>
+                                <li><a href="#"><img src="Images/vin-diesel 1.png" alt="Sócia do ator Vin Diesel sorrindo"></a></li>
+                                <li><a href="#"><img src="Images/gabigordo 1.png" alt="Jogador de Futebol Gabigol encarando a câmera"></a></li>
+                                <li><a href="#"><img src="Images/will-baiano 1.png" alt="Sócia do ator Will Smith sorrindo em uma praia com palmeiras ao fundo"></a></li>
+                                <li><a href="#"><img src="Images/tony_stark 1.png" alt="Sócia do ator Robert Downey Jr mais conhecido por seu papel como Tony Stark"></a></li>
+                                <li><a href="#"><img src="Images/pele 1.png" alt="Famoso jogador de futebol Pelé dando um sorriso fraco"></a></li>
+                                <li><a href="#"><img src="Images/samuel-rosa-bebê 1.png" alt="Cantor Samuel Rosa quando criança"></a></li>
+                                <li><a href="#"><img src="Images/chaves_metal 1.png" alt="Ator Roberto Gómez Bolaños mas conhecido pelo seu papel em Chaves com cabelo longo, um visual diferente"></a></li>
+                            </ul>
+                        </div>
+                        <div class="itens">
+                            <ul>
+                                <li><a href="#">vin_diesel</a></li>
+                                <li><a href="#">gabigordo</a></li>
+                                <li><a href="#">will_baiano</a></li>
+                                <li><a href="#">adriano_stark</a></li>
+                                <li><a href="#">king_pele</a></li>
+                                <li><a href="#">samuel_rosa</a></li>
+                                <li><a href="#">chaves_metal</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="meu_perfil">
+                        <a href="~/Perfil"><img src="Images/thank-you 2.png" alt="Sócia do Ator Keanu Reeves"></a>
+                            <div class="perfil_texto">
+                                <b>yes_baby</b>
+                                <p>Marcos Jeeves</p>
+                            </div>
+                    </div>
+                </section>
+                </section>
+                <section class="postar">
+                    <div class="perfil_postar">
+                        <a href="#"><img src="Images/thank-you 3.png" alt="Sócia do Ator Keanu Reeves"></a>
+                        <b>Postar</b>
+                    </div>
+                    <form class="campo_de_postagem" method="POST" action='@Url.Action("Postar")' enctype="multipart/form-data">
+                        <div class="campo">            
+                            <label for="descricao"></label>
+                            <input type="text" class="text_img" name="descricao" id="descricao" placeholder="Digite a descrição da imagem..."/>
+                        </div>
+                        <div class="campo campo2">
+                            <input type="file" class="file_img" name="Imagem" for="Imagem" />
+                            <label for="file">Escolha a Imagem</label>
+                        </div>
+                        <button class="postar_botao" type="submit">Postar</button>
+                    </form>
+                </section>
+            @foreach (Publicacao p in ViewBag.AllPubli)
+            {
+                <div id="@p.IdPublicacao" class="postagens">
+                @foreach (Usuario a in ViewBag.AllUser)
+                {
+                    <div class="foto_perfil_post">
+                        <a href="#"><img src= "Images/@a.Foto" alt="" width="42"; height="42";></a>
+                        <div class="text_perfil_post">
+                            <b>@a.Username</b>
+                            <p>Flamengo, RJ</p>
+                        </div>
+                    </div>
+                }
+                    <img src="Imagens/post-gabigordo 1.png" alt=""/>
+                    <div class="post_linha">
+                        <div class="post_interacao">
+                            <i class="far fa-heart" style="font-size:23px;color:black"></i>
+                            <i class="far fa-comment" style="font-size:23px;color:black"></i>
+                            <form class="comentar_post" method="POST" action='@Url.Action("Comentar")' enctype="multipart/form-data">
+                                <div class="campo">            
+                                    <input type="text" class="comenta_escrito" name="comentar" id="comentar" placeholder="Comentar...">
+                                </div>
+                            </form>
+                        </div>
+                        <p>@p.Likes curtidas</p>
+                    </div>
+                    
+                    <table>
+                    @foreach (Comentario e in ViewBag.AllComent)
+                    {
+                        <tr class="comentarios">
+                            <th>fghcfghjghj</th>
+                            <td>@e.Mensagem</td>
+                        </tr>
+                    }
+                    </table>
+                </div>
+            }
+            </div>    
+        </div>
+        
+</body>
+</html>
